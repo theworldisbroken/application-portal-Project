@@ -1,0 +1,654 @@
+/* Landing Page */
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+* {
+    font-family: 'Source Sans Pro';
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #201e1e;
+    background-color: #201e1e;
+}
+
+html {
+    background-color: #201e1e;
+}
+
+h1 {
+    padding-top: 0.5rem;
+}
+
+.navbar {
+    height: 60px;
+    border: 2px solid #11d2dc;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.navbar button {
+    position: absolute;
+    right: 25px;
+    color: #040404;
+    border-width: 2px;
+    border-color: #11d2dc;
+}
+
+.navbar button:hover {
+    color: #040404;
+    border-width: 2px;
+    background-color: #11d2dc;
+    border-color: #11d2dc;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 25px;
+}
+
+.navbar_about-us {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 4.4rem;
+
+}
+
+
+/* Landing Page */
+
+/* https://blog.mypat.in/education/increase-productivity-while-studying-from-home/ */
+.welcome-div-LandingPage {
+    background-image: url("https://mlj0276u6bix.i.optimole.com/w:1240/h:697/q:mauto/https://blog.mypat.in/wp-content/uploads/2021/08/V1.0-Increase-productivity-at-home-3.png");
+    background-size: 750px;
+    background-position: center;
+    background-position-x: 98%;
+    background-repeat: no-repeat;
+    height: 60%;
+    border: 4px solid #5acfd6;
+    border-right: none;
+    border-left: none;
+    text-align: left;
+}
+
+.welcome-div-LandingPage * {
+    margin: 2rem auto;
+}
+
+.welcome-div-LandingPage h1 {
+    color: #092648;
+    font-weight: bolder;
+    font-size: 50px;
+    margin: 2.4rem 2rem;
+}
+
+.welcome-div-LandingPage p {
+    position: relative;
+    right: 19.7%;
+    width: 57%;
+    color: #092648;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.inform-div-LandingPage {
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2019/08/Flat-design-magnifier-by-sabavector.jpg");
+    background-size: 750px;
+    background-position: center;
+    background-position-x: -2%;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border: 4px solid #5acfd6;
+    border-right: none;
+    border-left: none;
+    text-align: left;
+}
+
+.inform-div-LandingPage p {
+    position: relative;
+    left: 38.7%;
+    top: 30%;
+    width: 57%;
+    color: #092648;
+    font-weight: 700;
+    font-size: 30px;
+    box-shadow: 10px 13px 19px rgba(62, 191, 198, 0.5);
+}
+
+/* StartPage */
+
+.welcome-div-startpage {
+    background-color: var(--main-color);
+}
+
+.welcome-div-startpage h1 {
+    position: relative;
+    top: 20rem;
+    color: #fff;
+    background-color: var(--main-color);
+    z-index: -1;
+}
+
+/* About us */
+#AboutUs {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+#UserManagementPage,
+#DegreeCourseManagementPage,
+#DegreeCourseApplicationManagementPage{
+    background-color: var(--main-color);
+}
+
+/* Modal Style */
+#LoginDialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 250px;
+    top: 20%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+Form {
+    position: relative;
+    bottom: 15px;
+}
+
+#LoginDialogUserIDText,
+#LoginDialogPasswordText {
+    margin: 35px auto;
+    padding: 9px;
+    width: 60%;
+    border: 1px solid #04d3de;
+}
+
+#LoginDialogUserIDText:focus,
+#LoginDialogPasswordText:focus {
+    border: 3px solid #68c8ce;
+}
+
+#PerformLoginButton {
+    position: relative;
+    left: 205px;
+    color: #040404;
+    border-width: 2px;
+    border-color: #11d2dc;
+    background-color: #ffffff;
+}
+
+#X-Button {
+    position: relative;
+    left: 460px;
+    width: 40px;
+    background-color: #ffffff;
+    border: 1px solid #04d3de;
+    border-radius: 10px;
+    color: #040404;
+}
+
+#PerformLoginButton:hover,
+#X-Button:hover,
+#LoginOutButton:hover {
+    color: #040404;
+    border-width: 2px;
+    background-color: #11d2dc;
+    border-color: #11d2dc;
+}
+
+#PerformLoginButton,
+#X-Button,
+#OpenLoginDialogButton,
+#LoginOutButton {
+    transition: all ease-in-out 0.2s;
+}
+
+#PerformLoginButton:active,
+#X-Button:active,
+#OpenLoginDialogButton:active,
+#LoginOutButton:active {
+    color: #040404;
+    border-width: 2px;
+    background-color: #11d2dc;
+    border-color: #11d2dc;
+    transform: translateY(4px);
+}
+
+.error-message-auth {
+    color: #ff0000;
+    margin: auto;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    border: 2px solid #11d2dc;
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0;
+    background-color: #f8f9fa;
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar Button,
+#OpenUserManagementPageButton,
+#OpenStartPageButton,
+#OpenDegreeCourseManagementPageButton,
+#OpenDegreeCourseApplicationManagementPageButton {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    font-size: small;
+    margin: 1rem auto;
+}
+
+/* UserManagement */
+.div-UsersManagement {
+    background-color: var(--main-color);
+}
+
+.div-UsersManagement h1 {
+    color: #fff;
+}
+
+.div-UsersManagement ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--main-color);
+    list-style-type: none;
+}
+
+.div-UsersManagement li {
+    margin: 5% 18%;
+    width: 70%;
+}
+
+.user-block {
+    background-color: #f2f2f2;
+    border: 4px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    border: 2px solid #ccc;
+    height: 4rem;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.user-item {
+    text-align: start;
+    margin: 7px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.user-actions Button {
+    margin: 3%;
+    width: 80px;
+}
+
+/* Create Form */
+.add-form,
+.edit-form {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    background-color: var(--main-color);
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+
+.mb-3 {
+    color: #fff;
+    margin: 0.5% 33%;
+    width: 30%;
+}
+
+#formBasicCheckbox {
+    position: relative;
+    text-align: start;
+}
+
+#UserManagementPageCreateComponent h1,
+#DegreeCourseApplicationPageCreateComponent h1 {
+    color: #fff;
+    margin: 0 70px 0 0;
+}
+
+#UserManagementPageCreateComponent h3,
+#DegreeCourseManagementPageCreateComponent h3,
+#DegreeCourseApplicationPageCreateComponent h3,
+.EditApplicationError{
+    color: #ff0000;
+    margin: 0 70px 0 0;
+}
+
+/* Edit Form */
+#UserManagementPageEditComponent h1 {
+    color: #fff;
+    margin: 0 70px 0 0;
+}
+
+#UserManagementPageEditComponent h3 {
+    position: absolute;
+    bottom: 24%;
+    left: 58.5%;
+    color: #00ff00;
+    margin: 0 0 0 0;
+}
+
+/* DegreeCourse */
+.div-DegreeCourseManagement {
+    background-color: var(--main-color);
+}
+
+.div-DegreeCourseManagement ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--main-color);
+    list-style-type: none;
+}
+
+.div-DegreeCourseManagement li {
+    margin: 5% 13%;
+    width: 80%;
+}
+
+.div-DegreeCourseManagement h1 {
+    color: #fff;
+}
+
+hr {
+    color: #fff;
+}
+
+.course-block {
+    background-color: #f2f2f2;
+    border: 4px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.course-name {
+    border: 2px solid #ccc;
+    height: 4rem;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.course-item {
+    text-align: start;
+    margin: 7px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.course-actions Button {
+    margin: 3%;
+    width: 80px;
+}
+
+/* Create Form Degreecourse */
+#DegreeCourseManagementPageCreateComponent h1 {
+    color: #fff;
+    margin: 0 50px 0 0;
+}
+
+
+
+/* Edit Form DegreeCourse */
+#DegreeCourseManagementPageEditComponent h1 {
+    color: #fff;
+    margin: 0 37px 0 0;
+}
+
+#DegreeCourseManagementPageEditComponent h3 {
+    color: #00ff00;
+    position: relative;
+    bottom: 14%;
+    left: 10.5%;
+}
+
+
+/* Application Edit */
+#DegreeCourseApplicationPageEditComponent h1 {
+    color: #fff;
+    margin: 0 47px 0 0;
+}
+
+.EditApplicationSave {
+    color: #00ff00;
+    position: relative;
+    bottom: 14%;
+    left: 10.5%;
+}
+
+/* ICONS */
+#OpenStartPageButton,
+#OpenUserManagementPageButton,
+#OpenDegreeCourseManagementPageButton,
+#OpenDegreeCourseApplicationManagementPageButton {
+    background-color: transparent;
+}
+
+#OpenStartPageButton:hover,
+#OpenUserManagementPageButton:hover,
+#OpenDegreeCourseManagementPageButton:hover,
+#OpenDegreeCourseApplicationManagementPageButton:hover {
+    background-color: #83eff5;
+}
+
+#OpenStartPageButton img,
+#OpenUserManagementPageButton img,
+#OpenDegreeCourseManagementPageButton img,
+#OpenDegreeCourseApplicationManagementPageButton img {
+    height: 28px;
+}
+
+/* Buttons */
+.DeleteButton {
+    background-color: #f0a800;
+    border: none;
+}
+
+.DeleteButton:hover {
+    background-color: #cd9103;
+}
+
+.CreateApplicationButton {
+    width: 8rem;
+    background-color: #17cd03;
+    border: none;
+}
+
+.CreateApplicationButton:hover {
+    background-color: #2cb51c;
+}
+
+#DegreeCourseManagementPageCreateDegreeCourseButton,
+#UserManagementPageCreateUserButton {
+    background-color: transparent;
+    border: none;
+}
+
+#DegreeCourseManagementPageCreateDegreeCourseButton img:hover,
+#UserManagementPageCreateUserButton img:hover {
+    background-color: #3fce49;
+    border-radius: 50%;
+}
+
+.welcome-div-LandingPage,
+.inform-div-LandingPage {
+    container-type: inline-size;
+}
+
+@container (max-width: 1760px) {
+    .welcome-div-LandingPage p {
+        width: 80%;
+        right: 0;
+    }
+
+    .inform-div-LandingPage p {
+        width: 45%;
+        left: 52%;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    .welcome-div-LandingPage {
+        background-size: 80%;
+        background-image: none;
+        background-color: rgba(0, 136, 255, 0.3);
+    }
+
+    .welcome-div-LandingPage h1 {
+        font-size: 33px;
+        margin: 1.5rem 2rem;
+    }
+
+    .welcome-div-LandingPage p {
+        font-size: 22px;
+        width: 80%;
+        right: 0;
+        margin-top: 0;
+    }
+
+    .welcome-div-startpage h1 {
+        left: 6%;
+    }
+
+    .inform-div-LandingPage {
+        background-size: 80%;
+        background-image: none;
+        height: 20rem;
+        background-color: rgba(0, 136, 255, 0.3);
+    }
+
+    .inform-div-LandingPage p {
+        font-size: 22px;
+        width: 80%;
+        left: 10%;
+        top: 20%;
+        margin-top: 0;
+
+    }
+
+    .welcome-div-AboutUs{
+        margin: auto;
+        width: 70%;
+    }
+
+    .div-UsersManagement h1,
+    .div-DegreeCourseManagement h1 {
+        margin: auto 0 0 3rem;
+    }
+
+    #DegreeCourseManagementPageCreateDegreeCourseButton,
+    #UserManagementPageCreateUserButton {
+        margin: auto 0 0 3rem;
+    }
+
+    #modal {
+        width: 400px;
+        height: 150px;
+    }
+
+    #X-Button {
+        left: 450px;
+    }
+
+    #PerformLoginButton {
+        left: 40%;
+    }
+
+    .div-UsersManagement ul,
+    .div-DegreeCourseManagement ul {
+        grid-template-columns: 1fr;
+    }
+    #UserManagementPageCreateComponent h1,
+    #UserManagementPageEditComponent h1,
+    #DegreeCourseManagementPageCreateComponent h1,
+    #DegreeCourseApplicationPageCreateComponent h1,
+    #DegreeCourseManagementPageEditComponent h1,
+    #DegreeCourseApplicationPageEditComponent h1{
+        margin-right: 1%;
+        word-break: break-all;
+    }
+
+    #UserManagementPageCreateComponent,
+    #UserManagementPageEditComponent,
+    #DegreeCourseManagementPageCreateComponent,
+    #DegreeCourseApplicationPageCreateComponent,
+    #DegreeCourseManagementPageEditComponent,
+    #DegreeCourseApplicationPageEditComponent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 4rem 0 0;
+        text-align: center;
+    }
+
+    #UserManagementPageCreateComponent *:not(input[type= "checkbox"]),
+    #UserManagementPageEditComponent *:not(input[type= "checkbox"]),
+    #DegreeCourseManagementPageCreateComponent *,
+    #DegreeCourseApplicationPageCreateComponent *,
+    #DegreeCourseManagementPageEditComponent *,
+    #DegreeCourseApplicationPageEditComponent * {
+        width: 17rem;
+    }
+
+}
